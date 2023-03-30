@@ -1,7 +1,6 @@
-import { useEffect } from "react"
 
 
-export default function Search({setSearch, getMovies, title}){ 
+export default function Search({setSearch, getMovies}){ 
 
     const handleSubmit = (event) =>{
         event.preventDefault()
@@ -11,8 +10,6 @@ export default function Search({setSearch, getMovies, title}){
         if (event.target.value.length >= 3) {setSearch(event.target.value) }
         console.log(event.target.value)
     } 
-
-    
 
     
     return (
