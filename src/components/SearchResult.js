@@ -1,7 +1,7 @@
 import Moviecard from './Moviecard';
 import Search from './Search';
 
-export default function Main({movies, setSearch, getDetails, getMovies}){ 
+export default function SearchResult({movies, setSearch, getDetails, getMovies}){ 
 
     return (
       <>

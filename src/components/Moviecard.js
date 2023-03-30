@@ -3,13 +3,11 @@
 export default function MovieCard({title, img, year, actors, imdbID}){ 
     
     return(
-        <article>   
+        <article key={imdbID}>   
 
-            {img === "N/A" ? <img src="./placeholder.png" alt={title} /> : <img src={img} alt={title} />}
+            {img === "N/A" ? <img src="./placeholder.png" alt={title + " poster"} /> : <img src={img} alt={title} />}
             <h3>{title}</h3>  
             <p>publisert: {year}</p> 
-            <p>actors: {actors}</p> 
-            <p>{imdbID}</p>
             
         </article>
     )
